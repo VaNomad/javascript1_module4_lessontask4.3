@@ -11,7 +11,7 @@ const select = document.querySelector("select");
 const listContainer = document.querySelector(".list");
 
 function newList(event) {
-  console.log("newList:", arguments);
+  console.log("newList:", event.target.value);
   
 }
 listContainer.addEventListener("click", newList);
