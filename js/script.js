@@ -10,9 +10,17 @@ const select = document.querySelector("select");
 
 const listContainer = document.querySelector(".list");
 
+listContainer.addEventListener("change", newList);
+
 function newList(event) {
-  console.log("newList:", event.target.value);
+  console.log(event.target.value);
   
+  const amount = event.target.value;
+
+  listContainer.innerHTML = "";
+
+  for (let i = 1; i <= amount; i++) {
+    listContainer.innerHTML = `<a class="entry" href="details.html?id=${i}">${i}</a>`;
+  }
 }
-listContainer.addEventListener("click", newList);
 
