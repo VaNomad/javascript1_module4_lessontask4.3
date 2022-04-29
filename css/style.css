@@ -32,6 +32,34 @@ select {
     height: 90vh;
 }
 
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: white;
+    border-radius: 1rem;
+}
+
+input {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background: rgb(11, 91, 133);
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
